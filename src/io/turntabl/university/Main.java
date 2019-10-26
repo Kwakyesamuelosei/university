@@ -44,7 +44,7 @@ public class Main {
         Lecturer lecturer2 = new Lecturer("Dr Jamal",LecturerSubject.GARDENING);
         List<CourseYear> courseYearThirdForth = Arrays.asList(CourseYear.THIRD,CourseYear.FOURTH);
 
-        Course course2 = new Course("Advanced Gardening",lecturer2,thirdFourthYearStudent,courseYearThirdForth);
+        Course course2 = new Course("Advanced Gardening Program",lecturer2,thirdFourthYearStudent,courseYearThirdForth);
         printCourseThirdFouth(course2);
 
         List<Student> fourthYearStudent = new ArrayList<>();
