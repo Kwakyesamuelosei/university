@@ -6,12 +6,23 @@
   <property name="src" location="src"/>
   <property name="build" location="build"/>
   <property name="dist" location="dist"/>
+  <property name="src.test.dir" value="${basedir}/src/test"/>
 
   <target name="init">
     <!-- Create the time stamp -->
     <tstamp/>
     <!-- Create the build directory structure used by compile -->
     <mkdir dir="${build}"/>
+  </target>
+
+  <target name="compile-test" depends="init"
+          description="compile the source in Unit Test">
+    <!-- Compile the Java code from ${src} into ${build} -->
+    <javac srcdir="${src.test.dir}" destdir="${build}"/>
+  </target>
+
+  <target name="test" depends="compile-test">
+
   </target>
 
   <target name="compile" depends="init"
