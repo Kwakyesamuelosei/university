@@ -11,8 +11,8 @@ class NumbersTest {
 
     @Test
     void sum() {
-        int sum = Numbers.sum(2,2);
-        int expected = 4;
+        int sum = Numbers.sum(2,3);
+        int expected = 5;
         assertEquals(expected,sum);
     }
 
