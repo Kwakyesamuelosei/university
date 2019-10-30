@@ -1,4 +1,4 @@
-package io.turntabl.university;
+package university;
 
 public class Student {
     private String name;

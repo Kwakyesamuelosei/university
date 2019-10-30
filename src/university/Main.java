@@ -1,4 +1,4 @@
-package io.turntabl.university;
+package university;
 
 import java.util.ArrayList;
 import java.util.Arrays;

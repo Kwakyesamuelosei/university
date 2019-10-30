@@ -9,17 +9,18 @@
   </target>
 
   <path id="junit.platform.libs.classpath">
-    <fileset dir="${basedir}/src/lib/junit-platform/"/>
+    <fileset dir="${basedir}/lib/junit-platform/"/>
   </path>
 
   <path id="junit.engine.jupiter.classpath">
-    <fileset dir="${basedir}/src/lib/jupiter/"/>
+    <fileset dir="${basedir}/lib/jupiter/"/>
   </path>
+
 
   <target name="compile-test" depends="init">
     <mkdir dir="${build.classes.dir}"/>
     <javac srcdir="${src.test.dir}"
-           destdir="${build.classes.dir}">
+           destdir="${output.dir}">
       <!-- our tests only need JUnit Jupiter engine
       libraries in our compile classpath for the tests -->
       <classpath refid="junit.engine.jupiter.classpath"/>
@@ -37,10 +38,10 @@
 
       <classpath>
         <!-- the test classes themselves -->
-        <pathelement location="${build.classes.dir}"/>
+        <pathelement location="${output.dir}"/>
       </classpath>
       <testclasses outputdir="${output.dir}">
-        <fileset dir="${build.classes.dir}"/>
+        <fileset dir="${output.dir}"/>
         <listener type="legacy-brief" sendSysOut="true"/>
         <listener type="legacy-xml" sendSysErr="true" sendSysOut="true"/>
 

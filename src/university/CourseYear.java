@@ -1,4 +1,4 @@
-package io.turntabl.university;
+package university;
 
 public enum CourseYear {
     FIRST,SECOND,THIRD,FOURTH

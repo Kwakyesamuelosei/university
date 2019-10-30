@@ -1,4 +1,4 @@
-package io.turntabl.university;
+package university;
 
 public enum LecturerSubject {
     ENGLISH_LANGUAGE,MATHS,PHYSICS,PROGRAMMING,GARDENING

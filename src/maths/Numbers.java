@@ -1,4 +1,4 @@
-package io.turntabl.maths;
+package maths;
 
 public class Numbers {
     public static int sum(int num1, int num2){

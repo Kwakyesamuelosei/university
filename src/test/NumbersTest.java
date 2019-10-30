@@ -1,9 +1,7 @@
 package test;
 
-import io.turntabl.maths.Numbers;
+import maths.Numbers;
 import org.junit.jupiter.api.Test;
-
-import javax.print.attribute.standard.NumberUp;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -20,6 +18,11 @@ class NumbersTest {
     void isPositive() {
         boolean isPositive = Numbers.isPositive(2);
         assertTrue(isPositive);
+    }
+    @Test
+    void isPositive2() {
+        boolean isPositive2 = Numbers.isPositive(-2);
+        assertFalse(isPositive2);
     }
 
     @Test
