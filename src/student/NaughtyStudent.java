@@ -11,7 +11,7 @@ public class NaughtyStudent extends Student {
     public Double getAverageGrade() {
         Double studentAverage = super.getAverageGrade();
         Double average = studentAverage + 0.1;
-        System.out.println("Naughty Higest Score: " + average);
+//        System.out.println("Naughty Higest Score: " + average);
         return average;
     }
 
